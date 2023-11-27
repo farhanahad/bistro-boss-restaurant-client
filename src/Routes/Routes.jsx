@@ -7,7 +7,7 @@ import Login from "../pages/Login/Login";
 import SignUp from "../pages/SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
 import Secret from "../pages/Shared/Secret/Secret";
-import AdminRoute from "./AdminRoute";
+//import AdminRoute from "./AdminRoute";
 //import Dashboard from "../Layout/DashBoard";
 import MyCart from "../pages/Dashboard/MyCart/MyCart";
 import Dashboard from "../Layout/Dashboard";
@@ -67,11 +67,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "addItem",
-        element: (
-          <AdminRoute>
-            <AddItem></AddItem>
-          </AdminRoute>
-        ),
+        element: <AddItem></AddItem>,
       },
     ],
   },
