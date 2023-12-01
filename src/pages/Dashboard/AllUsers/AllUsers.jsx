@@ -34,7 +34,7 @@
 //     return <div>Error: {error.message}</div>;
 //   }
 //   const handleMakeAdmin = (user) => {
-//     fetch(`http://localhost:5000/users/admin/${user._id}`, {
+//     fetch(`https://bistro-boss-server-two-gilt.vercel.app/users/admin/${user._id}`, {
 //       method: "PATCH",
 //     })
 //       .then((res) => res.json())
@@ -128,7 +128,9 @@ const AllUsers = () => {
   } = useQuery({
     queryKey: ["users"],
     queryFn: async () => {
-      const res = await fetch("http://localhost:5000/users");
+      const res = await fetch(
+        "https://bistro-boss-server-two-gilt.vercel.app/users"
+      );
 
       if (!res.ok) {
         throw new Error("Network response was not ok");
@@ -147,9 +149,12 @@ const AllUsers = () => {
   }
 
   const handleMakeAdmin = (user) => {
-    fetch(`http://localhost:5000/users/admin/${user._id}`, {
-      method: "PATCH",
-    })
+    fetch(
+      `https://bistro-boss-server-two-gilt.vercel.app/users/admin/${user._id}`,
+      {
+        method: "PATCH",
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
