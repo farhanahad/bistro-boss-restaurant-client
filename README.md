@@ -1,6 +1,9 @@
-Bistro Boss Restaurent Details
+#Bistro Boss Restaurent Details
 
-Live site: https://bistro-boss-restauent.netlify.app/ <br/>
-Server site: https://bistro-boss-server-two-gilt.vercel.app/ <br/>
+##Live site: https://bistro-boss-restaurent-22.netlify.app/ <br/>
+##Server site: https://bistro-boss-server-two-gilt.vercel.app/ <br/>
 
-It's perfectly working on local server..But,for unknown reason it's not perfectly working live server
+###->On this website, users can log in/register using username, password, or Google Authentication(OAuth2).
+###->Users can order food, remove from cart and payment food.
+###->Admin can manage all orders, add/remove item from the and admin can make admin any user.
+###->Technologies: JavaScript, ReactJS, NodeJS, MongoDB, ExpressJS, daisyUI, Hosting:(Client-Side: Netlify & Server-Side: Vercel).
